@@ -1,0 +1,37 @@
+libg2d-viv (6.4.3.p4.4-1) unstable; urgency=medium
+
+  * update to NXP BSP 5.15.52-2.1.0
+
+ -- Abdur Rehman <abdur.rehman@toradex.com>  Sat, 31 Dec 2022 16:51:44 +0500
+
+libg2d-viv (6.4.3.p4.2-1) unstable; urgency=medium
+
+  * update to NXP BSP 5.15.32-2.0.0
+
+ -- Abdur Rehman <abdur.rehman@toradex.com>  Wed, 07 Sep 2022 14:32:38 +0500
+
+libg2d-viv (6.4.3.p1.4-1) unstable; urgency=medium
+
+  * update to NXP BSP L5.4.70_2.3.2
+
+ -- Abdur Rehman <abdur.rehman@toradex.com>  Tue, 11 May 2021 18:51:06 +0500
+
+libg2d-viv (6.4.3.p1.0-1) unstable; urgency=medium
+
+  * update to NXP BSP L5.4.x_2.3.0
+
+ -- Dejan Jesenko <dejan.jesenko@toradex.com>  Thu, 18 Feb 2021 15:27:29 +0000
+
+libg2d-viv (6.4.0.p2.4-2) unstable; urgency=medium
+
+  * enable update-alternatives for libg2d and g2d_samples
+
+ -- Rafael Lorandi <rafael.lorandi@toradex.com>  Tue, 11 Aug 2020 13:06:58 -0300
+
+libg2d-viv (6.4.0.p2.4-1) unstable; urgency=medium
+
+  * update to NXP BSP rel_imx_5.4.24_2.1.0
+
+ -- Abdur Rehman <abdur.rehman@toradex.com>  Wed, 22 Jul 2020 16:26:06 +0500
+
+

@@ -1,0 +1,35 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+# Uncomment this to turn on verbose mode.
+export DH_VERBOSE=1
+
+DEB_BUILD_OPTIONS=noautodbgsym
+FILENAME="imx-gpu-g2d-6.4.11.p2.4-aarch64-b07999b"
+URL="https://www.nxp.com/lgfiles/NMG/MAD/YOCTO/$(FILENAME).bin"
+
+%:
+	dh $@
+
+override_dh_auto_configure:
+	wget $(URL) && chmod +x $(FILENAME).bin
+	./$(FILENAME).bin --auto-accept
+	mv $(FILENAME)/g2d/* .
+	rm -rf $(FILENAME)
+
+override_dh_strip_nondeterminism:
+
+override_dh_strip:
+
+# we ignore this because otherwise we'd need to set a hard
+# dependency on imx-gpu-viv, which provides the 'missing'
+# libs. This is undesirable because packages like Weston
+# would pull imx-gpu-viv because they depend on libg2d,
+# which breaks the build due to the `Conflicts` set against
+# mesa libs imx-gpu-viv. Notably, libOpenCL.so.3 and libGAL.so.
+
+# FIXME:
+# In the future we may choose to more properly treat these
+# dependency errors on libs dependending on imx-gpu-viv.
+override_dh_shlibdeps:
+
