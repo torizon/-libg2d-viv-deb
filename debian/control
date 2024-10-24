@@ -10,6 +10,7 @@ Package: libg2d-viv
 Section: libs
 Architecture: any
 Multi-Arch: same
+Provides: libg2d
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: libg2d-viv (imx-gpu-g2d)
  GPU G2D library and apps for i.MX with 2D GPU and no DPU.
@@ -19,6 +20,7 @@ Package: libg2d-viv-dev
 Section: libdevel
 Architecture: any
 Multi-Arch: same
+Provides: libg2d-dev
 Depends: libg2d-viv (= ${binary:Version}),
          ${misc:Depends},
 Recommends: libc6-dev
