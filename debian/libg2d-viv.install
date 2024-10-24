@@ -1,1 +1,1 @@
-/usr/lib/libg2d-viv.so.* /usr/lib/aarch64-linux-gnu/
+usr/lib/libg2d-viv.so.* usr/lib/${DEB_HOST_GNU_TYPE}
