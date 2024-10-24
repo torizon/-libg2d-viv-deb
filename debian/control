@@ -2,26 +2,27 @@ Source: libg2d-viv
 Section: libs
 Priority: optional
 Maintainer: Leonardo Held <leonardo.held@toradex.com>
-Build-Depends: debhelper (>=11~), wget, ca-certificates
+Build-Depends: debhelper-compat (= 13), wget, ca-certificates, imx-gpu-viv-wayland-dev
 Standards-Version: 4.1.4
 Homepage: http://nxp.com
 
 Package: libg2d-viv
 Section: libs
-Architecture: arm64
+Architecture: any
 Multi-Arch: same
-Depends: libc6
-Description: libg2d-viv(imx-gpu-g2d)
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: libg2d-viv (imx-gpu-g2d)
  GPU G2D library and apps for i.MX with 2D GPU and no DPU.
  Provides the implementation of the G2D graphics library by NXP.
 
 Package: libg2d-viv-dev
 Section: libdevel
-Architecture: arm64
+Architecture: any
 Multi-Arch: same
-Depends: libg2d-viv
+Depends: libg2d-viv (= ${binary:Version}),
+         ${misc:Depends},
 Recommends: libc6-dev
-Description: libg2d-viv(imx-gpu-g2d) - Development files
+Description: libg2d-viv (imx-gpu-g2d) - Development files
  GPU G2D library and apps for i.MX with 2D GPU and no DPU. This package
  contains symbolic links, header files, and related items necessary for
  software development.
