@@ -20,16 +20,3 @@ override_dh_auto_configure:
 override_dh_strip_nondeterminism:
 
 override_dh_strip:
-
-# we ignore this because otherwise we'd need to set a hard
-# dependency on imx-gpu-viv, which provides the 'missing'
-# libs. This is undesirable because packages like Weston
-# would pull imx-gpu-viv because they depend on libg2d,
-# which breaks the build due to the `Conflicts` set against
-# mesa libs imx-gpu-viv. Notably, libOpenCL.so.3 and libGAL.so.
-
-# FIXME:
-# In the future we may choose to more properly treat these
-# dependency errors on libs dependending on imx-gpu-viv.
-override_dh_shlibdeps:
-
