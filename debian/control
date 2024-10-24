@@ -1,7 +1,7 @@
 Source: libg2d-viv
 Section: libs
 Priority: optional
-Maintainer: Leonardo Held <leonardo.held@toradex.com>
+Maintainer: Toradex Packaging Team <debian-pkg-team@toradex.com>
 Build-Depends: debhelper-compat (= 13), wget, ca-certificates, imx-gpu-viv-wayland-dev
 Standards-Version: 4.1.4
 Homepage: http://nxp.com
