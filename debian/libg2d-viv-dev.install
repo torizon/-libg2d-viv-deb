@@ -1,1 +1,2 @@
-/usr/include/*.h /usr/include/
+usr/include
+usr/lib/libg2d.so usr/lib/${DEB_HOST_GNU_TYPE}
