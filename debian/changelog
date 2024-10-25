@@ -1,3 +1,28 @@
+libg2d-viv (6.4.11.p2.4-1) bookworm; urgency=medium
+
+  * Team upload
+  * Use update-alternatives mechanism to allow setting libg2d.so.2 on runtime
+      - d/libg2d-viv-dev.install:
+      - d/libg2d-viv-dev.links: remove
+      - d/libg2d-viv.postinst: add script
+      - d/libg2d-viv.prerm: add script
+  * github: workflows: update deb-builder.yml with latest toradex feed key
+  * d/compat: remove in favor of declaring it o d/control file
+  * d/control:
+      - Build-Depends on imx-gpu-viv-wayland-dev
+      - Change maintainer to Toradex Packaging team
+      - Make libg2d-viv-dev depends on libg2d-viv
+      - Provide libg2d and symbols file
+      - Update Architecture field to any
+      - Update short description to improve searchability
+      - Use debhelper compat version 13
+      - Use default shlibs mechanism to set Depends field
+  * d/libg2d-viv.install: install only libg2d-viv shared library
+  * d/libg2d-viv.symbols: add symbols file
+  * d/rules: remove override of dh_shlibs - not needed
+
+ -- Carlos Henrique Lima Melara <carlos.melara@toradex.com>  Fri, 25 Oct 2024 09:54:06 -0300
+
 libg2d-viv (6.4.3.p4.4-1) unstable; urgency=medium
 
   * update to NXP BSP 5.15.52-2.1.0
