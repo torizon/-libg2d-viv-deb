@@ -2,7 +2,10 @@ Source: libg2d-viv
 Section: libs
 Priority: optional
 Maintainer: Toradex Packaging Team <debian-pkg-team@toradex.com>
-Build-Depends: debhelper-compat (= 13), wget, ca-certificates, imx-gpu-viv-wayland-dev
+Build-Depends: ca-certificates,
+               debhelper-compat (= 13),
+               imx-gpu-viv-wayland-dev,
+               wget
 Standards-Version: 4.1.4
 Homepage: http://nxp.com
 
@@ -21,11 +24,9 @@ Section: libdevel
 Architecture: any
 Multi-Arch: same
 Provides: libg2d-dev
-Depends: libg2d-viv (= ${binary:Version}),
-         ${misc:Depends},
+Depends: libg2d-viv (= ${binary:Version}), ${misc:Depends}
 Recommends: libc6-dev
 Description: libg2d-viv (imx-gpu-g2d) - Development files
  GPU G2D library and apps for i.MX with 2D GPU and no DPU. This package
  contains symbolic links, header files, and related items necessary for
  software development.
-
