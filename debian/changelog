@@ -1,3 +1,14 @@
+libg2d-viv (6.4.11.p2.4-2) bookworm; urgency=medium
+
+  * Team upload.
+  * wrap-and-sort package.
+  * Use libg2d-viv.so.2 as alternative to libg2d.so.2 generic name.
+      - d/libg2d-viv.links: add correct links;
+      - d/libg2d-viv.{prerm,postinst}: update alternatives.
+  * d/control: bump Standards-Version to 4.7.0.
+
+ -- Carlos Henrique Lima Melara <carlos.melara@toradex.com>  Tue, 29 Oct 2024 14:43:45 -0300
+
 libg2d-viv (6.4.11.p2.4-1) bookworm; urgency=medium
 
   * Team upload
@@ -58,5 +69,3 @@ libg2d-viv (6.4.0.p2.4-1) unstable; urgency=medium
   * update to NXP BSP rel_imx_5.4.24_2.1.0
 
  -- Abdur Rehman <abdur.rehman@toradex.com>  Wed, 22 Jul 2020 16:26:06 +0500
-
-
