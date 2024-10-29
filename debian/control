@@ -6,7 +6,7 @@ Build-Depends: ca-certificates,
                debhelper-compat (= 13),
                imx-gpu-viv-wayland-dev,
                wget
-Standards-Version: 4.1.4
+Standards-Version: 4.7.0
 Homepage: http://nxp.com
 
 Package: libg2d-viv
