@@ -20,7 +20,7 @@ set -e
 case "$1" in
     remove)
         update-alternatives --remove libg2d.so.2 \
-            /usr/lib/aarch64-linux-gnu/libg2d-viv.so.2.1.0
+            /usr/lib/aarch64-linux-gnu/libg2d-viv.so.2
     ;;
 
     failed-upgrade|upgrade|deconfigure)
