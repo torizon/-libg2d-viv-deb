@@ -5,7 +5,7 @@
 export DH_VERBOSE=1
 
 DEB_BUILD_OPTIONS=noautodbgsym
-FILENAME="imx-gpu-g2d-6.4.11.p2.4-aarch64-b07999b"
+FILENAME="imx-gpu-g2d-6.4.11.p2.8-aarch64-95408a4"
 URL="https://www.nxp.com/lgfiles/NMG/MAD/YOCTO/$(FILENAME).bin"
 
 %:
