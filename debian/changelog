@@ -1,3 +1,11 @@
+libg2d-viv (6.4.11.p2.8-1) bookworm; urgency=medium
+
+  * Team upload.
+  * New upstream version 6.4.11.p2.8.
+  * d/libg2d-viv.links: update symlink to match newer library version.
+
+ -- Carlos Henrique Lima Melara <carlos.melara@toradex.com>  Mon, 27 Jan 2025 12:15:10 -0300
+
 libg2d-viv (6.4.11.p2.4-2) bookworm; urgency=medium
 
   * Team upload.
